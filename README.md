@@ -18,9 +18,4 @@ Here are some of the projects I've worked on:
 ![Your Name's GitHub stats](https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=radical)
 
 ### 📫 How to Reach Me
-- **Email**: your.email@example.com
-- **LinkedIn**: [Your LinkedIn](your-linkedin-url)
-- **Portfolio**: [Your Portfolio](your-portfolio-url)
-
-<!-- Optional: Add a fun or relevant banner/image -->
-![Banner Image](link-to-your-image)
+- **Email**: dev@syntax.love
