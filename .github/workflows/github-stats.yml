@@ -1,0 +1,24 @@
+name: Update GitHub Stats
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Update README with latest stats
+        run: |
+          curl -s https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=radical > README.md
+      - name: Commit changes
+        run: |
+          git config --local user.email "you@example.com"
+          git config --local user.name "your-username"
+          git add README.md
+          git commit -m "Update GitHub stats"
+          git push
